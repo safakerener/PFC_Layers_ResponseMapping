@@ -1,0 +1,183 @@
+1.0785 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+14.1576 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1080]. Using actual size
+14.7886 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002DBE1C6CF70>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002DBE28ED970>, multiSample=False, name='window1', numSamples=2, pos=(-1920, 0), screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+14.7887 	EXP 	window1: mouseVisible = True
+14.7887 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+14.7888 	EXP 	window1: recordFrameIntervals = False
+14.9536 	EXP 	window1: recordFrameIntervals = True
+15.1386 	EXP 	Screen (0) actual frame rate measured at 59.77Hz
+15.1386 	EXP 	window1: recordFrameIntervals = False
+16.4923 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='The experiment will begin soon.', units='height', win=Window(...), wrapWidth=1)
+16.4955 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+16.4979 	EXP 	Created fixCrossR_2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=1.0, name='fixCrossR_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.02, 0.02]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+16.4995 	EXP 	Created fixCrossR_4 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=1.0, name='fixCrossR_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.02, 0.02]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+16.5011 	EXP 	Created fixCrossR_3 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=1.0, name='fixCrossR_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.02, 0.02]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+16.5106 	EXP 	Created cat = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='cat', opacity=1.0, ori=0.0, pos=array([-0.6,  0.1]), rgb=UNKNOWN, text='cat', units='norm', win=Window(...), wrapWidth=1)
+16.5151 	EXP 	Created turtle = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='turtle', opacity=1.0, ori=0.0, pos=array([0.2, 0.1]), rgb=UNKNOWN, text='turtle', units='norm', win=Window(...), wrapWidth=1)
+16.5190 	EXP 	Created auto = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='auto', opacity=1.0, ori=0.0, pos=array([-0.2, -0.1]), rgb=UNKNOWN, text='auto', units='norm', win=Window(...), wrapWidth=1)
+16.5258 	EXP 	Created hand = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='hand', opacity=1.0, ori=0.0, pos=array([ 0.6, -0.1]), rgb=UNKNOWN, text='hand', units='norm', win=Window(...), wrapWidth=1)
+16.5304 	EXP 	Created farleft = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='farleft', opacity=1.0, ori=0.0, pos=array([-0.6, -0.1]), rgb=UNKNOWN, text='far left', units='norm', win=Window(...), wrapWidth=1)
+16.5342 	EXP 	Created farright = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='farright', opacity=1.0, ori=0.0, pos=array([0.6, 0.1]), rgb=UNKNOWN, text='far right', units='norm', win=Window(...), wrapWidth=1)
+16.5371 	EXP 	Created nearleft = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='nearleft', opacity=1.0, ori=0.0, pos=array([ 0.2, -0.1]), rgb=UNKNOWN, text='near left', units='norm', win=Window(...), wrapWidth=1)
+16.5401 	EXP 	Created nearright = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='nearright', opacity=1.0, ori=0.0, pos=array([-0.2,  0.1]), rgb=UNKNOWN, text='near right', units='norm', win=Window(...), wrapWidth=1)
+16.5429 	EXP 	Created fixCrossR = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=1.0, name='fixCrossR', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.02, 0.02]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+16.5551 	EXP 	text: autoDraw = True
+17.5515 	EXP 	Imported rootDesignMatrix.xlsx as conditions, 64 conditions, 4 params
+17.5526 	EXP 	Created sequence: sequential, trialTypes=64, nReps=1, seed=None
+17.5528 	EXP 	New trial (rep=0, index=0): {'category': 'cat', 'orientation': 1, 'taskOrientation': 1, 'stimfile': 'stim//cat1.png'}
+17.5531 	EXP 	Created sequence: random, trialTypes=1, nReps=3, seed=None
+17.5532 	EXP 	New trial (rep=0, index=0): None
+17.7729 	EXP 	text: autoDraw = False
+17.7729 	EXP 	text: autoDraw = False
+17.7729 	EXP 	image: image = 'stim//cat1.png'
+17.7729 	EXP 	image: autoDraw = True
+17.7729 	EXP 	fixCrossR_2: autoDraw = True
+17.8222 	EXP 	image: autoDraw = False
+17.8222 	EXP 	fixCrossR_2: autoDraw = False
+17.8222 	EXP 	fixCrossR_4: autoDraw = True
+18.0562 	EXP 	New trial (rep=1, index=0): None
+18.1724 	EXP 	fixCrossR_4: autoDraw = False
+18.1724 	EXP 	image: image = 'stim//cat1.png'
+18.1724 	EXP 	image: autoDraw = True
+18.1724 	EXP 	fixCrossR_2: autoDraw = True
+18.3225 	EXP 	image: autoDraw = False
+18.3225 	EXP 	fixCrossR_2: autoDraw = False
+18.3225 	EXP 	fixCrossR_4: autoDraw = True
+18.5568 	EXP 	New trial (rep=2, index=0): None
+18.6728 	EXP 	fixCrossR_4: autoDraw = False
+18.6728 	EXP 	image: image = 'stim//cat1.png'
+18.6728 	EXP 	image: autoDraw = True
+18.6728 	EXP 	fixCrossR_2: autoDraw = True
+18.8229 	EXP 	image: autoDraw = False
+18.8229 	EXP 	fixCrossR_2: autoDraw = False
+18.8229 	EXP 	fixCrossR_4: autoDraw = True
+19.0733 	EXP 	fixCrossR_4: autoDraw = False
+19.0733 	EXP 	fixCrossR_3: autoDraw = True
+19.0733 	EXP 	cat: autoDraw = True
+19.0733 	EXP 	turtle: autoDraw = True
+19.0733 	EXP 	auto: autoDraw = True
+19.0733 	EXP 	hand: autoDraw = True
+19.0733 	EXP 	farleft: autoDraw = True
+19.0733 	EXP 	farright: autoDraw = True
+19.0733 	EXP 	nearleft: autoDraw = True
+19.0733 	EXP 	nearright: autoDraw = True
+22.0610 	EXP 	New trial (rep=0, index=1): {'category': 'cat', 'orientation': 1, 'taskOrientation': 0, 'stimfile': 'stim//cat1.png'}
+22.0614 	EXP 	Created sequence: random, trialTypes=1, nReps=3, seed=None
+22.0615 	EXP 	New trial (rep=0, index=0): None
+22.1759 	EXP 	fixCrossR_3: autoDraw = False
+22.1759 	EXP 	cat: autoDraw = False
+22.1759 	EXP 	turtle: autoDraw = False
+22.1759 	EXP 	auto: autoDraw = False
+22.1759 	EXP 	hand: autoDraw = False
+22.1759 	EXP 	farleft: autoDraw = False
+22.1759 	EXP 	farright: autoDraw = False
+22.1759 	EXP 	nearleft: autoDraw = False
+22.1759 	EXP 	nearright: autoDraw = False
+22.1759 	EXP 	image: image = 'stim//cat1.png'
+22.1759 	EXP 	image: autoDraw = True
+22.1759 	EXP 	fixCrossR_2: autoDraw = True
+22.3257 	EXP 	image: autoDraw = False
+22.3257 	EXP 	fixCrossR_2: autoDraw = False
+22.3257 	EXP 	fixCrossR_4: autoDraw = True
+22.5439 	EXP 	New trial (rep=1, index=0): None
+22.6592 	EXP 	fixCrossR_4: autoDraw = False
+22.6592 	EXP 	image: image = 'stim//cat1.png'
+22.6592 	EXP 	image: autoDraw = True
+22.6592 	EXP 	fixCrossR_2: autoDraw = True
+22.8262 	EXP 	image: autoDraw = False
+22.8262 	EXP 	fixCrossR_2: autoDraw = False
+22.8262 	EXP 	fixCrossR_4: autoDraw = True
+23.0441 	EXP 	New trial (rep=2, index=0): None
+23.1600 	EXP 	fixCrossR_4: autoDraw = False
+23.1600 	EXP 	image: image = 'stim//cat1.png'
+23.1600 	EXP 	image: autoDraw = True
+23.1600 	EXP 	fixCrossR_2: autoDraw = True
+23.3099 	EXP 	image: autoDraw = False
+23.3099 	EXP 	fixCrossR_2: autoDraw = False
+23.3099 	EXP 	fixCrossR_4: autoDraw = True
+23.5604 	EXP 	fixCrossR_4: autoDraw = False
+23.5604 	EXP 	fixCrossR_3: autoDraw = True
+23.5604 	EXP 	cat: autoDraw = True
+23.5604 	EXP 	turtle: autoDraw = True
+23.5604 	EXP 	auto: autoDraw = True
+23.5604 	EXP 	hand: autoDraw = True
+23.5604 	EXP 	farleft: autoDraw = True
+23.5604 	EXP 	farright: autoDraw = True
+23.5604 	EXP 	nearleft: autoDraw = True
+23.5604 	EXP 	nearright: autoDraw = True
+26.5488 	EXP 	New trial (rep=0, index=2): {'category': 'cat', 'orientation': 2, 'taskOrientation': 1, 'stimfile': 'stim//cat2.png'}
+26.5491 	EXP 	Created sequence: random, trialTypes=1, nReps=3, seed=None
+26.5492 	EXP 	New trial (rep=0, index=0): None
+26.6629 	EXP 	fixCrossR_3: autoDraw = False
+26.6629 	EXP 	cat: autoDraw = False
+26.6629 	EXP 	turtle: autoDraw = False
+26.6629 	EXP 	auto: autoDraw = False
+26.6629 	EXP 	hand: autoDraw = False
+26.6629 	EXP 	farleft: autoDraw = False
+26.6629 	EXP 	farright: autoDraw = False
+26.6629 	EXP 	nearleft: autoDraw = False
+26.6629 	EXP 	nearright: autoDraw = False
+26.6629 	EXP 	image: image = 'stim//cat2.png'
+26.6629 	EXP 	image: autoDraw = True
+26.6629 	EXP 	fixCrossR_2: autoDraw = True
+26.8129 	EXP 	image: autoDraw = False
+26.8129 	EXP 	fixCrossR_2: autoDraw = False
+26.8129 	EXP 	fixCrossR_4: autoDraw = True
+27.0476 	EXP 	New trial (rep=1, index=0): None
+27.1489 	EXP 	fixCrossR_4: autoDraw = False
+27.1489 	EXP 	image: image = 'stim//cat2.png'
+27.1489 	EXP 	image: autoDraw = True
+27.1489 	EXP 	fixCrossR_2: autoDraw = True
+27.3131 	EXP 	image: autoDraw = False
+27.3131 	EXP 	fixCrossR_2: autoDraw = False
+27.3131 	EXP 	fixCrossR_4: autoDraw = True
+27.5474 	EXP 	New trial (rep=2, index=0): None
+27.6638 	EXP 	fixCrossR_4: autoDraw = False
+27.6638 	EXP 	image: image = 'stim//cat2.png'
+27.6638 	EXP 	image: autoDraw = True
+27.6638 	EXP 	fixCrossR_2: autoDraw = True
+27.8139 	EXP 	image: autoDraw = False
+27.8139 	EXP 	fixCrossR_2: autoDraw = False
+27.8139 	EXP 	fixCrossR_4: autoDraw = True
+28.0641 	EXP 	fixCrossR_4: autoDraw = False
+28.0641 	EXP 	fixCrossR_3: autoDraw = True
+28.0641 	EXP 	cat: autoDraw = True
+28.0641 	EXP 	turtle: autoDraw = True
+28.0641 	EXP 	auto: autoDraw = True
+28.0641 	EXP 	hand: autoDraw = True
+28.0641 	EXP 	farleft: autoDraw = True
+28.0641 	EXP 	farright: autoDraw = True
+28.0641 	EXP 	nearleft: autoDraw = True
+28.0641 	EXP 	nearright: autoDraw = True
+31.0517 	EXP 	New trial (rep=0, index=3): {'category': 'cat', 'orientation': 2, 'taskOrientation': 0, 'stimfile': 'stim//cat2.png'}
+31.0520 	EXP 	Created sequence: random, trialTypes=1, nReps=3, seed=None
+31.0521 	EXP 	New trial (rep=0, index=0): None
+31.1667 	EXP 	fixCrossR_3: autoDraw = False
+31.1667 	EXP 	cat: autoDraw = False
+31.1667 	EXP 	turtle: autoDraw = False
+31.1667 	EXP 	auto: autoDraw = False
+31.1667 	EXP 	hand: autoDraw = False
+31.1667 	EXP 	farleft: autoDraw = False
+31.1667 	EXP 	farright: autoDraw = False
+31.1667 	EXP 	nearleft: autoDraw = False
+31.1667 	EXP 	nearright: autoDraw = False
+31.1667 	EXP 	image: image = 'stim//cat2.png'
+31.1667 	EXP 	image: autoDraw = True
+31.1667 	EXP 	fixCrossR_2: autoDraw = True
+31.3179 	EXP 	image: autoDraw = False
+31.3179 	EXP 	fixCrossR_2: autoDraw = False
+31.3179 	EXP 	fixCrossR_4: autoDraw = True
+31.5514 	EXP 	New trial (rep=1, index=0): None
+31.6669 	EXP 	fixCrossR_4: autoDraw = False
+31.6669 	EXP 	image: image = 'stim//cat2.png'
+31.6669 	EXP 	image: autoDraw = True
+31.6669 	EXP 	fixCrossR_2: autoDraw = True
+31.8174 	EXP 	image: autoDraw = False
+31.8174 	EXP 	fixCrossR_2: autoDraw = False
+31.8174 	EXP 	fixCrossR_4: autoDraw = True
+32.0515 	EXP 	New trial (rep=2, index=0): None
+32.1676 	EXP 	fixCrossR_4: autoDraw = False
+32.1676 	EXP 	image: image = 'stim//cat2.png'
+32.1676 	EXP 	image: autoDraw = True
+32.1676 	EXP 	fixCrossR_2: autoDraw = True
+32.5430 	EXP 	window1: mouseVisible = True

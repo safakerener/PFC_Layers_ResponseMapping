@@ -1,0 +1,4 @@
+﻿category,orientation,taskOrientation,stimfile,trial.thisRepN,trial.thisTrialN,trial.thisN,trial.thisIndex,stimloop.thisRepN,stimloop.thisTrialN,stimloop.thisN,stimloop.thisIndex,text.started,text.stopped,image.started,image.stopped,fixCrossR_2.started,fixCrossR_2.stopped,fixCrossR_4.started,fixCrossR_4.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+cat,1,1,stim//cat1.png,0,0,0,0,0,0,0,0,7.032799600000544,None,8.26486720000048,None,8.26486720000048,None,8.297417200000382,None,,001,2023-10-11_15h35.01.591,untitled,2022.1.4,60.333972672088116,
+cat,1,1,stim//cat1.png,0,0,0,0,1,0,1,0,,,8.64775390000068,None,8.64775390000068,None,8.797839200000453,None,,001,2023-10-11_15h35.01.591,untitled,2022.1.4,60.333972672088116,
+cat,1,1,stim//cat1.png,0,0,0,0,2,0,2,0,,,9.131149800000458,None,9.131149800000458,None,9.2981963000002,None,,001,2023-10-11_15h35.01.591,untitled,2022.1.4,60.333972672088116,

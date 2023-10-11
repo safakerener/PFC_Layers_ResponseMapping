@@ -1,0 +1,8 @@
+﻿category,orientation,taskOrientation,stimfile,trial.thisRepN,trial.thisTrialN,trial.thisN,trial.thisIndex,stimloop.thisRepN,stimloop.thisTrialN,stimloop.thisN,stimloop.thisIndex,text.started,text.stopped,image.started,image.stopped,fixCrossR_2.started,fixCrossR_2.stopped,fixCrossR_4.started,fixCrossR_4.stopped,fixCrossR_3.started,fixCrossR_3.stopped,textbox.started,textbox.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+cat,1,1,stim//cat1.png,0,0,0,0,0,0,0,0,24.275599300000067,None,25.489872099999957,None,25.489872099999957,None,25.53994259999945,None,,,,,,001,2023-10-11_15h12.22.688,untitled,2022.1.4,59.76600414064663,
+cat,1,1,stim//cat1.png,0,0,0,0,1,0,1,0,,,25.890456999999515,None,25.890456999999515,None,26.04033199999958,None,,,,,,001,2023-10-11_15h12.22.688,untitled,2022.1.4,59.76600414064663,
+cat,1,1,stim//cat1.png,0,0,0,0,2,0,2,0,,,26.376062700000148,None,26.376062700000148,None,26.540509599999496,None,,,,,,001,2023-10-11_15h12.22.688,untitled,2022.1.4,59.76600414064663,
+cat,1,1,stim//cat1.png,0,0,0,0,,,,,,,,,,,,,26.80761859999984,None,26.80761859999984,None,,001,2023-10-11_15h12.22.688,untitled,2022.1.4,59.76600414064663,
+cat,1,0,stim//cat1.png,0,1,1,1,0,0,0,0,,,29.860798499999873,None,29.860798499999873,None,30.027095299999928,None,,,,,,001,2023-10-11_15h12.22.688,untitled,2022.1.4,59.76600414064663,
+cat,1,0,stim//cat1.png,0,1,1,1,1,0,1,0,,,30.36063860000013,None,30.36063860000013,None,30.527553899999475,None,,,,,,001,2023-10-11_15h12.22.688,untitled,2022.1.4,59.76600414064663,
+cat,1,0,stim//cat1.png,0,1,1,1,2,0,2,0,,,30.877593299999717,None,30.877593299999717,None,31.027660699999615,None,,,,,,001,2023-10-11_15h12.22.688,untitled,2022.1.4,59.76600414064663,
