@@ -2,7 +2,9 @@
 % date 26.09.2023
 
 % Change to the desired working directory
-cd('C:\Users\willi\Desktop\PFC_Layers\PFC_Layers_ResponseMapping\Pilot')
+%cd('C:\Users\willi\Desktop\PFC_Layers\PFC_Layers_ResponseMapping\Pilot')
+
+cd('C:\Users\erene\OneDrive\Desktop\PFC Layers\PFC_Layers_ResponseMapping\Pilot')
 
 % Create a GUI for entering the participant number and number of blocks
 prompt = {'Enter Participant Number:', 'Number of Blocks:'};
@@ -15,7 +17,7 @@ if isempty(inputValues)
     return; % User canceled the input
 end
 
-folderName = 'designMatrices';
+folderName = 'trialMatrices';
 
 % Check if the folder already exists
 if ~isfolder(folderName)
@@ -30,24 +32,24 @@ participant = inputValues{1};
 numBlocks = str2double(inputValues{2});
 
 % Create a directory in the "participantData" folder based on the participant number
-dataDir = fullfile('participantData', sprintf('s%s', participant));
+% dataDir = fullfile('participantData', sprintf('s%s', participant));
 
-if ~exist(dataDir, 'dir')
-    mkdir(dataDir);
-end
+% if ~exist(dataDir, 'dir')
+%     mkdir(dataDir);
+% end
 
 for n = 1:numBlocks
     block = sprintf('block_%s', num2str(n));
 
     % Create a directory for each block within the participant's folder
-    blockDir = fullfile(dataDir, block);
+    % blockDir = fullfile(dataDir, block);
 
-    if ~exist(blockDir, 'dir')
-        mkdir(blockDir);
-    else
-        disp('ERROR: Participant folder exists. Overwrite aborted.')
-        return
-    end
+    % if ~exist(blockDir, 'dir')
+    %     mkdir(blockDir);
+    % else
+    %     disp('ERROR: Participant folder exists. Overwrite aborted.')
+    %     return
+    % end
 
     % Load the Excel file
     filename = 'rootDesignMatrix.xlsx'; % Replace with your Excel file name
@@ -92,27 +94,17 @@ for n = 1:numBlocks
     % Combine the header row and sampled data
     sampled_data_with_header = [header(5:end); sampled_data];
     
-    % Create a new Excel file to store the sampled data
-    output_filename_sampled = fullfile('designMatrices', sprintf('sampled_data_s%s.xlsx', participant));
+    shuffled_data_with_header(:,5:12) = sampled_data_with_header;
+
+    sampled_and_shuffled_with_header = shuffled_data_with_header;
     
-    % Check if the output Excel file already exists
-    if exist(output_filename_sampled, 'file') == 2
-        error('The sampled data Excel file already exists. Aborting compilation.');
-    else
-        try
-            % Attempt to write the sampled data to the Excel file
-            writecell(sampled_data_with_header, output_filename_sampled);
-            disp('Sampling complete. Sampled data saved to "sampled_data_sParticipant.xlsx".');
-        catch
-            error('Error writing sampled data to Excel file.');
-        end
-    end
+
     % Create a new Excel file to store the shuffled data
-    output_filename = fullfile('designMatrices', sprintf('designMatrix_s%s_%s.xlsx', participant, num2str(n)));
+    output_filename = fullfile('trialMatrices', sprintf('trialMatrix_s%s_%s.xlsx', participant, num2str(n)));
 
     % Check if the output Excel file already exists
     if exist(output_filename, 'file') == 2
-        error('The design matrix Excel file already exists. Aborting compilation.');
+        error('The trial matrix Excel file already exists. Aborting compilation.');
     else
         try
             % Attempt to write data to the Excel file
