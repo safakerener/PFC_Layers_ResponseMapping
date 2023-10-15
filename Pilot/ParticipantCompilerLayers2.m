@@ -80,8 +80,8 @@ for n = 1:numBlocks
     sheet_name = 'Permutations'; % Modify the sheet name if needed
     raw_data_perm = readcell(permutations_filename);
     
-    % Randomly sample 96 rows from the permutations data
-    sample_size = 96; % Modify the sample size as needed
+    % Randomly sample 64 rows from the permutations data
+    sample_size = 64; % Modify the sample size as needed
     num_permutations = size(raw_data_perm, 1);
     
     if num_permutations < sample_size
