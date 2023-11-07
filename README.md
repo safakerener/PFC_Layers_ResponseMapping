@@ -12,14 +12,4 @@ stimulus paths are relative and should work on all machines.
 
 
 IMPORTANT BEFORE RUNNING:
-replace path in experiment script
-replace path in PsychoPy Builder code component
-
-
-
-
-
-TO DO:
-replace correct (equalized, centralized) images
-fix multiple keypresses per trial
-fix line REMOVE THE QUOTES f"{_thisDir}/designMatrices/designMatrix_s{subject_number}_{block_number}.xlsx"
+replace path in matlab script
