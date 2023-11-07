@@ -1,10 +1,10 @@
 % written by Safak Erener (safakerener@gmail.com)
-% date 26.09.2023
+% last updated 06.11.2023
 
 % Change to the desired working directory
-%cd('C:\Users\willi\Desktop\PFC_Layers\PFC_Layers_ResponseMapping\Pilot')
+cd('C:\Users\willi\Desktop\PFC_Layers\PFC_Layers_ResponseMapping\Pilot')
 
-cd('C:\Users\erene\OneDrive\Desktop\PFC Layers\PFC_Layers_ResponseMapping\Pilot')
+% cd('C:\Users\erene\OneDrive\Desktop\PFC Layers\PFC_Layers_ResponseMapping\Pilot')
 
 % Create a GUI for entering the participant number and number of blocks
 prompt = {'Enter Participant Number:', 'Number of Blocks:'};
@@ -24,8 +24,10 @@ if ~isfolder(folderName)
     % Create the folder
     mkdir(folderName);
     disp(['Folder "', folderName, '" has been created.']);
+
 else
     disp(['Folder "', folderName, '" already exists.']);
+
 end
 
 participant = inputValues{1};
@@ -38,8 +40,11 @@ numBlocks = str2double(inputValues{2});
 %     mkdir(dataDir);
 % end
 
-for n = 1:numBlocks
-    block = sprintf('block_%s', num2str(n));
+
+% BLOCK 0 IS TRAINING
+
+for n = 1:numBlocks+1
+    block = sprintf('block_%s', num2str(n-1));
 
     % Create a directory for each block within the participant's folder
     % blockDir = fullfile(dataDir, block);
@@ -65,7 +70,7 @@ for n = 1:numBlocks
 
     % Remove the header row from the raw data
     raw_data(1, :) = [];
-    raw_data(:, 13:end) = [];
+    raw_data(:, 14:end) = [];
 
     % Shuffle the remaining rows
     rng('shuffle'); % Seed the random number generator with current time
@@ -75,45 +80,82 @@ for n = 1:numBlocks
     % Combine the header row and shuffled data
     shuffled_data_with_header = [header; shuffled_data];
 
-    % Load the permutations data from your Excel file
-    permutations_filename = 'permutations.xlsx'; % Replace with the actual path to your Excel file
-    sheet_name = 'Permutations'; % Modify the sheet name if needed
-    raw_data_perm = readcell(permutations_filename);
+
+    obj = {"Turtle" "Horse" "Car" "Shoe"};
+    ori = {"Full Left" "Full Right" "Half Left" "Half Right"};
+
     
-    % Randomly sample 64 rows from the permutations data
-    sample_size = 64; % Modify the sample size as needed
-    num_permutations = size(raw_data_perm, 1);
+    [comb_objfirst, comb_orifirst] = tempperm(obj, ori);
     
-    if num_permutations < sample_size
-        error('Not enough permutations in the Excel file.');
-    end
-    
-    sample_indices = randperm(num_permutations, sample_size);
-    sampled_data = raw_data_perm(sample_indices, :);
-    
+
+    comb_objfirst(:, 9) = {'True'};
+    comb_orifirst(:, 9) = {'False'};
+
+
+    random_objfirst = comb_objfirst(randperm(size(comb_objfirst, 1), 32), :);
+    random_orifirst = comb_orifirst(randperm(size(comb_orifirst, 1), 32), :);
+    combined_responseSampled = [random_orifirst; random_objfirst];
+    random_responseSampled = combined_responseSampled(randperm(size(combined_responseSampled, 1)), :);
+
+     
+
+
+
     % Combine the header row and sampled data
-    sampled_data_with_header = [header(5:end); sampled_data];
+    sampled_data_with_header = [header(5:end); random_responseSampled];
     
-    shuffled_data_with_header(:,5:12) = sampled_data_with_header;
+    shuffled_data_with_header(:,5:13) = sampled_data_with_header;
 
     sampled_and_shuffled_with_header = shuffled_data_with_header;
     
 
     % Create a new Excel file to store the shuffled data
-    output_filename = fullfile('trialMatrices', sprintf('trialMatrix_s%s_%s.xlsx', participant, num2str(n)));
+    output_filename = fullfile('trialMatrices', sprintf('trialMatrix_s%s_%s.xlsx', participant, num2str(n)-1));
 
+
+
+        % Set the random number generator seed for reproducibility
+    rng((str2double(participant)+13)*log(str2double(block(end))+1));
+    
+    % Generate 64 random numbers with a normal distribution around 2.5
+    meanValue = 2.5;
+    stdDeviation = 0.15; % You can adjust the standard deviation as needed
+    randomNumbers = meanValue + stdDeviation * randn(1, 64);
+    
+    % Round the generated numbers to three decimal places
+    roundedNumbers = round(randomNumbers, 3);
+    
+    % Create a cell array to store the data
+    itidata = cell(65, 1);  % 65 rows (including the header) and 1 column
+    itidata{1} = 'interval';  % Set the header
+    
+    for i = 1:64
+        itidata{i+1} = roundedNumbers(i);
+    end
+    
+    shuffled_data_with_header_ITI = [shuffled_data_with_header itidata];
+
+    disp([block ' ITI distribution complete. ITI matrix saved.']);
+    
     % Check if the output Excel file already exists
     if exist(output_filename, 'file') == 2
         error('The trial matrix Excel file already exists. Aborting compilation.');
     else
         try
             % Attempt to write data to the Excel file
-            writecell(shuffled_data_with_header, output_filename);
+            writecell(shuffled_data_with_header_ITI, output_filename);
             disp([block ' shuffling complete. Shuffled trials saved to "' output_filename '".']);
         catch
             error('Error writing data to Excel file.');
         end
     end
+    
+    % Calculate and display the average
+    average = mean(roundedNumbers);
+    fprintf('ITI average: %.3f\n', average);
+
+
 end
 
 disp('Participant compiling complete.');
+

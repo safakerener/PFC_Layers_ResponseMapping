@@ -1,0 +1,74 @@
+﻿category,orientation,taskCue,stimfile,resp1,resp2,resp3,resp4,resp5,resp6,resp7,resp8,objFirst,interval,n,kb.duration_raw,kb.keys_raw,kb.rt_mean,kb.rt_raw,kb.rt_std,order
+horse,1,stim//ori2.png,stim//horse1.png,Turtle,Shoe,Car,Horse,Full Left,Half Left,Half Right,Full Right,True,2.54,1.0,,'1',1.5640966892242432,1.5640966892242432,0.0,0.0
+shoe,4,stim//ori2.png,stim//shoe4.png,Turtle,Car,Shoe,Horse,Full Left,Half Left,Half Right,Full Right,True,2.578,1.0,,'4',1.1169943809509277,1.1169943809509277,0.0,1.0
+car,3,stim//obj2.png,stim//car3.png,Shoe,Horse,Car,Turtle,Half Right,Half Left,Full Left,Full Right,True,2.427,1.0,,'3',0.6200364828109741,0.6200364828109741,0.0,2.0
+car,3,stim//ori2.png,stim//car3.png,Horse,Shoe,Car,Turtle,Half Left,Full Left,Full Right,Half Right,True,2.609,1.0,,'4',1.2229945659637451,1.2229945659637451,0.0,3.0
+turtle,1,stim//obj1.png,stim//turtle1.png,Half Left,Full Left,Full Right,Half Right,Turtle,Shoe,Horse,Car,False,2.522,0.0,'--','--',,,,
+horse,3,stim//ori2.png,stim//horse3.png,Horse,Turtle,Car,Shoe,Half Left,Full Left,Half Right,Full Right,True,2.647,0.0,'--','--',,,,
+turtle,2,stim//obj2.png,stim//turtle2.png,Car,Horse,Shoe,Turtle,Full Right,Half Right,Full Left,Half Left,True,2.393,0.0,'--','--',,,,
+horse,2,stim//obj1.png,stim//horse2.png,Half Right,Full Right,Full Left,Half Left,Car,Turtle,Horse,Shoe,False,2.414,0.0,'--','--',,,,
+turtle,3,stim//obj1.png,stim//turtle3.png,Full Right,Half Right,Full Left,Half Left,Turtle,Shoe,Car,Horse,False,2.378,0.0,'--','--',,,,
+turtle,3,stim//obj2.png,stim//turtle3.png,Shoe,Car,Turtle,Horse,Half Left,Full Right,Full Left,Half Right,True,2.497,0.0,'--','--',,,,
+shoe,4,stim//obj1.png,stim//shoe4.png,Car,Horse,Shoe,Turtle,Half Right,Full Right,Full Left,Half Left,True,2.49,0.0,'--','--',,,,
+horse,4,stim//ori1.png,stim//horse4.png,Turtle,Horse,Car,Shoe,Half Left,Full Right,Half Right,Full Left,True,2.544,0.0,'--','--',,,,
+turtle,1,stim//ori2.png,stim//turtle1.png,Full Left,Half Right,Half Left,Full Right,Horse,Turtle,Car,Shoe,False,2.39,0.0,'--','--',,,,
+car,2,stim//ori2.png,stim//car2.png,Turtle,Car,Shoe,Horse,Full Left,Full Right,Half Right,Half Left,True,2.435,0.0,'--','--',,,,
+shoe,4,stim//obj2.png,stim//shoe4.png,Car,Horse,Shoe,Turtle,Half Left,Full Left,Half Right,Full Right,True,2.582,0.0,'--','--',,,,
+horse,4,stim//ori2.png,stim//horse4.png,Full Right,Half Right,Full Left,Half Left,Turtle,Shoe,Horse,Car,False,2.379,0.0,'--','--',,,,
+car,1,stim//obj1.png,stim//car1.png,Full Right,Half Left,Half Right,Full Left,Horse,Car,Turtle,Shoe,False,2.509,0.0,'--','--',,,,
+shoe,3,stim//obj2.png,stim//shoe3.png,Car,Shoe,Turtle,Horse,Full Right,Half Right,Full Left,Half Left,True,2.458,0.0,'--','--',,,,
+turtle,2,stim//obj1.png,stim//turtle2.png,Full Right,Full Left,Half Left,Half Right,Turtle,Car,Horse,Shoe,False,2.241,0.0,'--','--',,,,
+horse,3,stim//obj2.png,stim//horse3.png,Half Left,Full Right,Full Left,Half Right,Shoe,Car,Turtle,Horse,False,2.257,0.0,'--','--',,,,
+horse,1,stim//obj2.png,stim//horse1.png,Horse,Shoe,Turtle,Car,Full Right,Half Right,Half Left,Full Left,True,2.521,0.0,'--','--',,,,
+car,3,stim//obj1.png,stim//car3.png,Horse,Car,Shoe,Turtle,Full Left,Half Left,Full Right,Half Right,True,2.317,0.0,'--','--',,,,
+car,2,stim//obj2.png,stim//car2.png,Car,Turtle,Shoe,Horse,Full Right,Half Left,Half Right,Full Left,True,2.532,0.0,'--','--',,,,
+horse,3,stim//obj1.png,stim//horse3.png,Half Right,Full Right,Full Left,Half Left,Shoe,Turtle,Horse,Car,False,2.665,0.0,'--','--',,,,
+shoe,1,stim//ori1.png,stim//shoe1.png,Car,Shoe,Turtle,Horse,Full Right,Half Left,Half Right,Full Left,True,2.302,0.0,'--','--',,,,
+car,2,stim//obj1.png,stim//car2.png,Car,Horse,Shoe,Turtle,Full Right,Full Left,Half Left,Half Right,True,2.383,0.0,'--','--',,,,
+horse,4,stim//obj2.png,stim//horse4.png,Half Left,Full Left,Full Right,Half Right,Car,Turtle,Horse,Shoe,False,2.528,0.0,'--','--',,,,
+car,4,stim//obj1.png,stim//car4.png,Horse,Turtle,Shoe,Car,Half Left,Full Right,Full Left,Half Right,True,2.916,0.0,'--','--',,,,
+shoe,1,stim//ori2.png,stim//shoe1.png,Half Right,Half Left,Full Right,Full Left,Turtle,Car,Shoe,Horse,False,2.506,0.0,'--','--',,,,
+turtle,4,stim//obj1.png,stim//turtle4.png,Horse,Turtle,Car,Shoe,Full Left,Half Left,Full Right,Half Right,True,2.474,0.0,'--','--',,,,
+car,3,stim//ori1.png,stim//car3.png,Car,Shoe,Horse,Turtle,Full Left,Half Left,Full Right,Half Right,True,2.508,0.0,'--','--',,,,
+turtle,3,stim//ori1.png,stim//turtle3.png,Full Left,Full Right,Half Right,Half Left,Car,Shoe,Horse,Turtle,False,2.598,0.0,'--','--',,,,
+horse,2,stim//ori1.png,stim//horse2.png,Horse,Turtle,Car,Shoe,Half Left,Full Right,Half Right,Full Left,True,2.598,0.0,'--','--',,,,
+turtle,1,stim//ori1.png,stim//turtle1.png,Half Left,Full Left,Half Right,Full Right,Shoe,Horse,Turtle,Car,False,2.383,0.0,'--','--',,,,
+horse,1,stim//obj1.png,stim//horse1.png,Half Left,Half Right,Full Right,Full Left,Horse,Car,Shoe,Turtle,False,2.505,0.0,'--','--',,,,
+car,4,stim//ori1.png,stim//car4.png,Turtle,Shoe,Horse,Car,Half Left,Full Left,Full Right,Half Right,True,2.502,0.0,'--','--',,,,
+shoe,1,stim//obj2.png,stim//shoe1.png,Shoe,Horse,Turtle,Car,Half Right,Full Left,Half Left,Full Right,True,2.427,0.0,'--','--',,,,
+car,1,stim//ori1.png,stim//car1.png,Turtle,Car,Horse,Shoe,Half Right,Full Right,Half Left,Full Left,True,2.239,0.0,'--','--',,,,
+horse,2,stim//ori2.png,stim//horse2.png,Shoe,Turtle,Car,Horse,Half Right,Half Left,Full Right,Full Left,True,2.532,0.0,'--','--',,,,
+turtle,1,stim//obj2.png,stim//turtle1.png,Half Right,Full Left,Full Right,Half Left,Horse,Turtle,Car,Shoe,False,2.477,0.0,'--','--',,,,
+car,1,stim//ori2.png,stim//car1.png,Half Right,Half Left,Full Left,Full Right,Turtle,Shoe,Horse,Car,False,2.751,0.0,'--','--',,,,
+car,1,stim//obj2.png,stim//car1.png,Full Left,Half Left,Half Right,Full Right,Car,Shoe,Turtle,Horse,False,2.659,0.0,'--','--',,,,
+shoe,2,stim//obj2.png,stim//shoe2.png,Car,Turtle,Shoe,Horse,Half Left,Half Right,Full Left,Full Right,True,2.333,0.0,'--','--',,,,
+turtle,4,stim//ori2.png,stim//turtle4.png,Shoe,Horse,Car,Turtle,Full Right,Half Right,Half Left,Full Left,True,2.699,0.0,'--','--',,,,
+horse,2,stim//obj2.png,stim//horse2.png,Half Left,Full Left,Full Right,Half Right,Horse,Turtle,Shoe,Car,False,2.4,0.0,'--','--',,,,
+shoe,2,stim//ori2.png,stim//shoe2.png,Car,Shoe,Turtle,Horse,Full Left,Half Left,Full Right,Half Right,True,2.543,0.0,'--','--',,,,
+shoe,3,stim//ori1.png,stim//shoe3.png,Half Left,Half Right,Full Right,Full Left,Turtle,Car,Horse,Shoe,False,2.396,0.0,'--','--',,,,
+car,2,stim//ori1.png,stim//car2.png,Full Left,Full Right,Half Right,Half Left,Shoe,Car,Turtle,Horse,False,2.676,0.0,'--','--',,,,
+turtle,4,stim//ori1.png,stim//turtle4.png,Full Right,Half Right,Half Left,Full Left,Horse,Shoe,Car,Turtle,False,2.457,0.0,'--','--',,,,
+shoe,4,stim//ori1.png,stim//shoe4.png,Half Left,Full Right,Full Left,Half Right,Shoe,Horse,Turtle,Car,False,2.742,0.0,'--','--',,,,
+turtle,2,stim//ori2.png,stim//turtle2.png,Half Left,Full Right,Half Right,Full Left,Horse,Shoe,Turtle,Car,False,2.57,0.0,'--','--',,,,
+shoe,1,stim//obj1.png,stim//shoe1.png,Full Left,Full Right,Half Right,Half Left,Shoe,Horse,Turtle,Car,False,2.617,0.0,'--','--',,,,
+shoe,2,stim//ori1.png,stim//shoe2.png,Half Right,Full Left,Half Left,Full Right,Shoe,Horse,Turtle,Car,False,2.643,0.0,'--','--',,,,
+turtle,4,stim//obj2.png,stim//turtle4.png,Half Right,Half Left,Full Left,Full Right,Car,Shoe,Turtle,Horse,False,2.3,0.0,'--','--',,,,
+turtle,3,stim//ori2.png,stim//turtle3.png,Car,Turtle,Shoe,Horse,Half Right,Full Right,Full Left,Half Left,True,2.49,0.0,'--','--',,,,
+car,4,stim//obj2.png,stim//car4.png,Full Right,Full Left,Half Left,Half Right,Car,Turtle,Shoe,Horse,False,2.687,0.0,'--','--',,,,
+horse,3,stim//ori1.png,stim//horse3.png,Full Left,Full Right,Half Right,Half Left,Turtle,Shoe,Horse,Car,False,2.6,0.0,'--','--',,,,
+shoe,3,stim//obj1.png,stim//shoe3.png,Horse,Car,Turtle,Shoe,Full Left,Half Right,Full Right,Half Left,True,2.409,0.0,'--','--',,,,
+car,4,stim//ori2.png,stim//car4.png,Half Right,Full Right,Half Left,Full Left,Turtle,Car,Shoe,Horse,False,2.412,0.0,'--','--',,,,
+shoe,2,stim//obj1.png,stim//shoe2.png,Full Left,Half Left,Full Right,Half Right,Horse,Turtle,Car,Shoe,False,2.619,0.0,'--','--',,,,
+horse,1,stim//ori1.png,stim//horse1.png,Shoe,Turtle,Horse,Car,Half Left,Full Left,Full Right,Half Right,True,2.527,0.0,'--','--',,,,
+horse,4,stim//obj1.png,stim//horse4.png,Half Left,Half Right,Full Right,Full Left,Shoe,Car,Turtle,Horse,False,2.421,0.0,'--','--',,,,
+shoe,3,stim//ori2.png,stim//shoe3.png,Car,Shoe,Turtle,Horse,Half Left,Full Left,Half Right,Full Right,True,2.82,0.0,'--','--',,,,
+turtle,2,stim//ori1.png,stim//turtle2.png,Half Left,Half Right,Full Right,Full Left,Shoe,Car,Horse,Turtle,False,2.467,0.0,'--','--',,,,
+
+extraInfo
+participant,44
+session,5
+date,2023-11-07_11h09.39.777
+expName,pilotv2
+psychopyVersion,2023.2.3
+frameRate,60.18813608595366
+expStart,2023-11-07 11h10.03.394798 +0100
