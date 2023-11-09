@@ -10,7 +10,7 @@
     <Param val="" valType="str" updates="None" name="End Message"/>
     <Param val="{'participant': '', 'session': ''}" valType="code" updates="None" name="Experiment info"/>
     <Param val="True" valType="bool" updates="None" name="Force stereo"/>
-    <Param val="False" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
     <Param val="" valType="str" updates="None" name="HTML path"/>
     <Param val="" valType="str" updates="None" name="Incomplete URL"/>
     <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
@@ -3826,7 +3826,19 @@
     <LoopTerminator name="instruction2_slide_loop"/>
     <LoopTerminator name="instructions2_controller"/>
     <LoopTerminator name="trainingLoop"/>
+    <LoopInitiator loopType="TrialHandler" name="babyEnter">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="trainingEnter" valType="num"/>
+      <Param name="name" updates="None" val="babyEnter" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
     <Routine name="IntroBaby"/>
+    <LoopTerminator name="babyEnter"/>
     <LoopInitiator loopType="TrialHandler" name="babySteps">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="[{'category': 'car', 'orientation': 2, 'taskCue': 'stim//obj2.png', 'stimfile': 'stim//car2.png', 'resp1': 'Turtle', 'resp2': 'Horse', 'resp3': 'Car', 'resp4': 'Shoe', 'resp5': 'Full Left', 'resp6': 'Half Right', 'resp7': 'Half Left', 'resp8': 'Full Right', 'objFirst': True, 'interval': 2.475}, {'category': 'horse', 'orientation': 1, 'taskCue': 'stim//ori2.png', 'stimfile': 'stim//horse1.png', 'resp1': 'Half Left', 'resp2': 'Full Right', 'resp3': 'Full Left', 'resp4': 'Half Right', 'resp5': 'Car', 'resp6': 'Horse', 'resp7': 'Shoe', 'resp8': 'Turtle', 'objFirst': False, 'interval': 2.425}, {'category': 'car', 'orientation': 1, 'taskCue': 'stim//obj1.png', 'stimfile': 'stim//car1.png', 'resp1': 'Half Left', 'resp2': 'Full Right', 'resp3': 'Full Left', 'resp4': 'Half Right', 'resp5': 'Car', 'resp6': 'Turtle', 'resp7': 'Horse', 'resp8': 'Shoe', 'objFirst': False, 'interval': 2.877}, {'category': 'shoe', 'orientation': 3, 'taskCue': 'stim//obj2.png', 'stimfile': 'stim//shoe3.png', 'resp1': 'Full Right', 'resp2': 'Half Right', 'resp3': 'Full Left', 'resp4': 'Half Left', 'resp5': 'Horse', 'resp6': 'Shoe', 'resp7': 'Car', 'resp8': 'Turtle', 'objFirst': False, 'interval': 2.181}, {'category': 'car', 'orientation': 1, 'taskCue': 'stim//ori2.png', 'stimfile': 'stim//car1.png', 'resp1': 'Turtle', 'resp2': 'Car', 'resp3': 'Horse', 'resp4': 'Shoe', 'resp5': 'Half Right', 'resp6': 'Half Left', 'resp7': 'Full Right', 'resp8': 'Full Left', 'objFirst': True, 'interval': 2.47}]" valType="str"/>

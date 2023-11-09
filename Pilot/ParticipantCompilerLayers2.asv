@@ -18,17 +18,9 @@
 % end
 
 
+% participant = inputValues{1};
+numBlocks = str2double(inputValues{2});
 
-
-
-
-% participant =   %inputValues{1};
-numBlocks = 6; %str2double(inputValues{2});
-
-
-for z = 91:95
-
-    participant = num2str(z)
 % Create a directory in the "participantData" folder based on the participant number
 dataDir = fullfile('participantData', sprintf('s%s', participant));
 
@@ -48,7 +40,7 @@ for n = 1:numBlocks+1
     
     block = sprintf('block_%s', num2str(n-1));
 
-    rng((str2double(participant)/10+13)*log(str2double(block(end))+1));
+    rng((str2double(participant)+13)*log(str2double(block(end))+1));
 
 
     % Create a directory for each block within the participant's folder
@@ -248,4 +240,4 @@ end
 
 
 disp('Participant compiling complete.');
-end
+
