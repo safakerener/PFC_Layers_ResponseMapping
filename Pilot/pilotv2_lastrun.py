@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on November 10, 2023, at 14:39
+    on November 10, 2023, at 15:03
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -105,7 +105,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='C:\\Users\\willi\\Desktop\\PFC_Layers_ResponseMapping\\Pilot\\pilotv2_lastrun.py',
+        originPath='C:\\Users\\EEG\\Desktop\\Safak\\PFC_Layers_ResponseMapping\\Pilot\\pilotv2_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -908,11 +908,6 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     }
     
     # --- Initialize components for Routine "codeAcc" ---
-    # Run 'Begin Experiment' code from code_4
-    total = 0
-    match = 0
-    accuracy = 0
-    
     
     # --- Initialize components for Routine "ITI" ---
     fixCrossR = visual.ShapeStim(
@@ -5034,26 +5029,6 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         continueRoutine = True
         # update component parameters for each repeat
         thisExp.addData('codeAcc.started', globalClock.getTime())
-        # Run 'Begin Routine' code from code_4
-        #respAll = [resp1, resp2, resp3, resp4, resp5, resp6, resp7, resp8]
-        
-        if kb.keys is None:
-            total += 1
-            accuracy = (match / total)
-            continue  # Skip the current iteration and continue with the next one
-        
-        else:
-            if int(kb.keys) == int(correctButton):
-                match += 1
-                total += 1
-                accuracy = (match / total)
-            else:
-                total += 1
-                accuracy = (match / total)
-                
-        if accuracy > 0.75 and total > 10:
-            break  # Close the current loop and go to the next loop
-        
         # keep track of which components have finished
         codeAccComponents = []
         for thisComponent in codeAccComponents:
@@ -5327,11 +5302,6 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     thisExp.nextEntry()
     # the Routine "tybb" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
-    # Run 'End Experiment' code from code_4
-    print("Total shown:", total)
-    print("Accuracy:", accuracy)
-    print("Run", block ," finished:")
-    
     
     # mark experiment as finished
     endExperiment(thisExp, win=win, inputs=inputs)
