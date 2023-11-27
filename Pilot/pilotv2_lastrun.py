@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on November 21, 2023, at 13:10
+    on November 21, 2023, at 15:34
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -921,20 +921,6 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         ori=0.0, pos=(0, 0), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor='black', fillColor='black',
         opacity=None, depth=0.0, interpolate=True)
-    text_total = visual.TextStim(win=win, name='text_total',
-        text=None,
-        font='Open Sans',
-        pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
-        languageStyle='LTR',
-        depth=-1.0);
-    text_acc = visual.TextStim(win=win, name='text_acc',
-        text=None,
-        font='Open Sans',
-        pos=(0, -0.3), height=0.05, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
-        languageStyle='LTR',
-        depth=-2.0);
     
     # --- Initialize components for Routine "END" ---
     key_resp_13 = keyboard.Keyboard()
@@ -5125,14 +5111,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         continueRoutine = True
         # update component parameters for each repeat
         thisExp.addData('ITI.started', globalClock.getTime())
-        text_total.setText('')
-        # Run 'Begin Routine' code from code_7
-        # Update text stimuli with the current values
-        text_total.setText(f"Total: {total}")
-        text_acc.setText(f"Accuracy: {accuracy}")
-        
         # keep track of which components have finished
-        ITIComponents = [fixCrossR, text_total, text_acc]
+        ITIComponents = [fixCrossR]
         for thisComponent in ITIComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -5187,72 +5167,6 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     # update status
                     fixCrossR.status = FINISHED
                     fixCrossR.setAutoDraw(False)
-            
-            # *text_total* updates
-            
-            # if text_total is starting this frame...
-            if text_total.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                text_total.frameNStart = frameN  # exact frame index
-                text_total.tStart = t  # local t and not account for scr refresh
-                text_total.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(text_total, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'text_total.started')
-                # update status
-                text_total.status = STARTED
-                text_total.setAutoDraw(True)
-            
-            # if text_total is active this frame...
-            if text_total.status == STARTED:
-                # update params
-                pass
-            
-            # if text_total is stopping this frame...
-            if text_total.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > text_total.tStartRefresh + 1.2-frameTolerance:
-                    # keep track of stop time/frame for later
-                    text_total.tStop = t  # not accounting for scr refresh
-                    text_total.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'text_total.stopped')
-                    # update status
-                    text_total.status = FINISHED
-                    text_total.setAutoDraw(False)
-            
-            # *text_acc* updates
-            
-            # if text_acc is starting this frame...
-            if text_acc.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                text_acc.frameNStart = frameN  # exact frame index
-                text_acc.tStart = t  # local t and not account for scr refresh
-                text_acc.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(text_acc, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'text_acc.started')
-                # update status
-                text_acc.status = STARTED
-                text_acc.setAutoDraw(True)
-            
-            # if text_acc is active this frame...
-            if text_acc.status == STARTED:
-                # update params
-                pass
-            
-            # if text_acc is stopping this frame...
-            if text_acc.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > text_acc.tStartRefresh + 1.2-frameTolerance:
-                    # keep track of stop time/frame for later
-                    text_acc.tStop = t  # not accounting for scr refresh
-                    text_acc.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'text_acc.stopped')
-                    # update status
-                    text_acc.status = FINISHED
-                    text_acc.setAutoDraw(False)
             
             # check for quit (typically the Esc key)
             if defaultKeyboard.getKeys(keyList=["escape"]):
